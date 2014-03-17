@@ -8,9 +8,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/usaRecipes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/aboutButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="showAmericanRecipes"
+        android:text="@string/button_usa" />
+
+    <Button
+        android:id="@+id/italianRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usaRecipes"
+        android:layout_centerHorizontal="true"
+        android:onClick="showItalianRecipes"
+        android:text="@string/button_italian" />
+
+    <Button
+        android:id="@+id/indianRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/italianRecipes"
+        android:layout_centerHorizontal="true"
+        android:onClick="showIndianRecipes"
+        android:text="@string/button_indian" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/WorldRecipes_PinImage" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="showAboutPage"
+        android:text="@string/button_about" />
 
 </RelativeLayout>
