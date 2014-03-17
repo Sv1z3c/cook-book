@@ -1,5 +1,8 @@
-package hr.svizec.cookbook;
+package hr.svizec.cookbook.activities;
 
+import hr.svizec.cookbook.R;
+import hr.svizec.cookbook.R.layout;
+import hr.svizec.cookbook.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
