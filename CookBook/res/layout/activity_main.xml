@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:contentDescription="@string/app_logo"
-        android:src="@drawable/WorldRecipes_PinImage" />
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/aboutButton"
