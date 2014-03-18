@@ -9,16 +9,19 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CategorySelect extends Activity
 {
-	
 	private String CR = "country";
+	private String CAT = "category";
 	
 	private ImageView countryFlag;
 	private TextView countryName;
+	
+	String selectedCountry;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class CategorySelect extends Activity
 		countryName = (TextView) findViewById(R.id.countryName);
 		
 		Intent i = getIntent();
-		String selectedCountry = i.getStringExtra(CR);
+		selectedCountry = i.getStringExtra(CR);
 		
 		initWidgets(selectedCountry);
 	}
@@ -46,6 +49,54 @@ public class CategorySelect extends Activity
 			countryFlag.setImageResource(R.drawable.italianflag);
 		else
 			countryFlag.setImageResource(R.drawable.indianflag);
+	}
+	
+	public void showMainDishes(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "MainDishes");
+		startActivity(i);
+	}
+	
+	public void showAppetizers(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "Appetizers");
+		startActivity(i);
+	}
+	
+	public void showDesserts(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "Desserts");
+		startActivity(i);
+	}
+	
+	public void showSoups(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "Soups");
+		startActivity(i);
+	}
+	
+	public void showSalads(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "Salads");
+		startActivity(i);
+	}
+	
+	public void showDrinks(View v)
+	{
+		Intent i = new Intent("hr.svizec.cookbook.RecipeList");
+		i.putExtra(CR, selectedCountry);
+		i.putExtra(CAT, "Drinks");
+		startActivity(i);
 	}
 
 	/**

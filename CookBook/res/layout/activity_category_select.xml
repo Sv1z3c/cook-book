@@ -44,6 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showMainDishes"
                     android:text="@string/button_main_dishes_select" />
 
                 <Button
@@ -52,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showAppetizers"
                     android:text="@string/button_appetizers_select" />
 
             </TableRow>
@@ -67,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showDesserts"
                     android:text="@string/button_desserts_select" />
 
                 <Button
@@ -75,6 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showSoups"
                     android:text="@string/button_soups_select" />
 
             </TableRow>
@@ -90,6 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showSalads"
                     android:text="@string/button_salads_select" />
 
                 <Button
@@ -98,6 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="showDrinks"
                     android:text="@string/button_drinks_select" />
 
             </TableRow>
