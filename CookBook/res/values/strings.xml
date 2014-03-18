@@ -10,5 +10,13 @@
     <string name="button_indian">Indian</string>
     <string name="app_logo">App logo</string>
     <string name="title_activity_category_select">Cook Book</string>
+    <string name="description_country_flag">Country flag</string>
+    <string name="button_main_dishes_select">Main dishes</string>
+    <string name="button_appetizers_select">Appetizers</string>
+    <string name="button_desserts_select">Desserts</string>
+    <string name="button_soups_select">Soups</string>
+    <string name="button_salads_select">Salads</string>
+    <string name="button_drinks_select">Drinks</string>
+    <string name="title_activity_recipe_list">Cook Book</string>
 
 </resources>

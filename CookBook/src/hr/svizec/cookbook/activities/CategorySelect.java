@@ -3,13 +3,22 @@ package hr.svizec.cookbook.activities;
 import hr.svizec.cookbook.R;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class CategorySelect extends Activity {
+public class CategorySelect extends Activity
+{
+	
+	private String CR = "country";
+	
+	private ImageView countryFlag;
+	private TextView countryName;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +26,26 @@ public class CategorySelect extends Activity {
 		setContentView(R.layout.activity_category_select);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		countryFlag = (ImageView) findViewById(R.id.countryFlag);
+		countryName = (TextView) findViewById(R.id.countryName);
+		
+		Intent i = getIntent();
+		String selectedCountry = i.getStringExtra(CR);
+		
+		initWidgets(selectedCountry);
+	}
+
+	private void initWidgets(String selectedCountry) {
+		
+		countryName.setText(selectedCountry);
+		
+		if(selectedCountry.equals("USA"))
+			countryFlag.setImageResource(R.drawable.usaflag);
+		else if(selectedCountry.equals("Italy"))
+			countryFlag.setImageResource(R.drawable.italianflag);
+		else
+			countryFlag.setImageResource(R.drawable.indianflag);
 	}
 
 	/**
