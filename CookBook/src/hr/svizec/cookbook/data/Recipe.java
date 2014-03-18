@@ -17,9 +17,9 @@ public abstract class Recipe extends Model {
 
 	public abstract void setName(String name);
 
-	public abstract String[] getIngredients();
+	public abstract String getIngredients();
 
-	public abstract void setIngredients(String[] ingredients);
+	public abstract void setIngredients(String ingredients);
 
 	public abstract String getPreparation();
 

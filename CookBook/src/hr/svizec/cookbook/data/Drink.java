@@ -10,7 +10,7 @@ public class Drink extends Recipe{
 	@Column(name = "Name")
 	private String name;
 	@Column(name = "Ingredients")
-	private String[] ingredients;
+	private String ingredients;
 	@Column(name = "Preparation")
 	private String preparation;
 	
@@ -36,11 +36,11 @@ public class Drink extends Recipe{
 		this.name = name;
 	}
 	@Override
-	public String[] getIngredients() {
+	public String getIngredients() {
 		return ingredients;
 	}
 	@Override
-	public void setIngredients(String[] ingredients) {
+	public void setIngredients(String ingredients) {
 		this.ingredients = ingredients;
 	}
 	@Override
