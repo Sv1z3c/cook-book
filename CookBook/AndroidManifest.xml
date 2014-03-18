@@ -45,12 +45,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="hr.svizec.cookbook.RecipeList"
-            android:label="@string/title_activity_recipe_list"
-            android:parentActivityName="hr.svizec.cookbook.activities.CategorySelect" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="hr.svizec.cookbook.activities.CategorySelect" />
+            android:name="hr.svizec.cookbook.activities.RecipeList"
+            android:label="@string/title_activity_recipe_list">
+            
+            <intent-filter>
+                <action android:name="hr.svizec.cookbook.RecipeList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

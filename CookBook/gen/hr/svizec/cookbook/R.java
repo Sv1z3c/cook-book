@@ -32,7 +32,7 @@ public final class R {
         public static final int CategoryScroll=0x7f080000;
         public static final int ScrollView=0x7f08000c;
         public static final int aboutButton=0x7f08000e;
-        public static final int action_settings=0x7f080012;
+        public static final int action_settings=0x7f080014;
         public static final int appetizersButton=0x7f080005;
         public static final int countryFlag=0x7f080002;
         public static final int countryName=0x7f080001;
@@ -42,6 +42,8 @@ public final class R {
         public static final int indianRecipes=0x7f080011;
         public static final int italianRecipes=0x7f080010;
         public static final int mainDishesButton=0x7f080004;
+        public static final int recipeList=0x7f080012;
+        public static final int recipeTitle=0x7f080013;
         public static final int saladsButton=0x7f08000a;
         public static final int soupsButton=0x7f080008;
         public static final int tableRow1=0x7f080003;
@@ -53,6 +55,7 @@ public final class R {
         public static final int activity_category_select=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_recipe_list=0x7f030002;
+        public static final int row_recipe=0x7f030003;
     }
     public static final class menu {
         public static final int category_select=0x7f070000;
